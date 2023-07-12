@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Maison Neue";
+    src: url(/fonts/Maison_Neue_Mono_Regular.ttf);
+}
+
+
+.footer {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container_side > a {
+    font-size: 12px;
+    font-family: "Maison Neue";
+    color: #101010;
+    border-bottom: 1px solid #101010;
+    text-transform: uppercase;
+}
+
+.footer_container_side > a:hover {
+    border-bottom: 0;
+}
+
+@media (max-width: 899px) {
+
+    .footer_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

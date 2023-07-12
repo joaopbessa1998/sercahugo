@@ -1,0 +1,165 @@
+/* .navigation {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 99;
+    top: 0 !important;
+}
+
+.navigation_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_left>a > img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.navigation_menu_toggle {
+    position: relative;
+}
+
+.navigation_overlay {
+    position: fixed;
+    background-color: rgb(239, 234, 225);
+    z-index: 2;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4em;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navigation_links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation_links>li {
+    position: relative;
+}
+
+.navigation_links>li>a {
+    font-size: 55px;
+    font-family: "Saol Display Regular";
+    position: relative;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #101010;
+}
+
+.navigation_item_wrapper::after {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: rgb(239, 234, 225);
+    margin: 0 auto;
+}
+
+
+@media (max-width: 899px) {
+
+    .navigation {
+        width: 100%;
+        height: 60px;
+    }
+
+    .navigation_left>a > img {
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+    }
+
+    .navigation_links>li>a {
+        font-size: 40px;
+    }
+} */
+
+.navigation {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 9;
+}
+
+.navigation_container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_left > a > img  {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.navigation_right > .navigation_right_menu_toggle {
+    display: none !important;
+}
+
+.navigation_links {
+    display: flex;
+    gap: 12px;
+}
+
+.navigation_links li a {
+    font-size: 12px;
+    font-family: "Maison Neue", monospace;
+    color: #101010;
+    text-transform: uppercase;
+}
+
+@media (max-width: 749px) {
+
+    .navigation {
+        height: 60px;
+    }
+
+    .navigation_right > .navigation_right_menu_toggle {
+        display: block;
+    }
+
+    .navigation_overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(239, 234, 225);
+        position: fixed;
+        left: 0;
+        top: -100%;
+        padding: 100px 0 150px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .navigation_links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navigation_links li a {
+        font-size: 16px;
+    }
+}

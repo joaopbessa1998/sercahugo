@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Saol Display";
+  src: url(/public/fonts/Saol_Display_Regular.ttf);
+}
+
+@font-face {
+  font-family: "Maison Neue", monospace;
+  src: url(/public/fonts/Maison_Neue_Mono_Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(/public/fonts/Poppins_Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(/public/fonts/Poppins_Regular.ttf);
+  font-weight: 400;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (min-width: 750px) {
+
+  .hamBox {
+    display: none;
+  }
+}
+
+
+@media (max-width: 749px) {
+
+  .hamBox {
+    width: 24px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .line_top {
+    width: 24px;
+    height: 2px;
+    background-color: #101010;
+    transform: rotate(0deg);
+    transition: all .5s;
+  }
+
+  .line_bottom {
+    width: 24px;
+    height: 2px;
+    background-color: #101010;
+    transform: rotate(0deg);
+    transition: all .5s;
+  }
+
+  .line_top.spin {
+    transform: rotate(135deg);
+    transition: all .5s;
+    margin-top: 5px;
+  }
+
+  .line_bottom.spin {
+    transform: rotate(225deg);
+    transition: all .5s;
+    margin-top: -4px;
+  }
+}

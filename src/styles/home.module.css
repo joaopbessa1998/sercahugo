@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Saol Display";
+  src: url(/fonts/Saol_Display_Regular.ttf);
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url(/fonts/Maison_Neue_Mono_Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins_Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins_Regular.ttf);
+  font-weight: 400;
+}
+
+.homeOne {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.homeOne>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homeTwo {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.homeTwo_container {
+  width: 60%;
+  margin: auto;
+}
+
+.homeTwo_container>h1, .homeTwo_container>p {
+  font-size: 40px;
+  font-family: "Saol Display";
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+.homeThree {
+  max-width: 1300px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.homeThree_container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.homeThree_container_side {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: calc(100% - 25px);
+}
+
+.homeThree_more {
+  text-align: center;
+}
+
+.homeThree_more>a {
+  font-size: 16px;
+  color: #101010;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1.5px solid #101010;
+}
+
+.homeThree_more>a:hover {
+  border-bottom: 0;
+}
+
+.homeFour {
+  width: 100%;
+  padding: 100px 0;
+  background-color: rgb(239, 234, 225);
+}
+
+.homeFour_container {
+  max-width: 1300px;
+  margin: auto;
+  width: 90%;
+}
+
+.homeFour_container_inner {
+  width: 100%;
+}
+
+.homeFour_container_inner>p {
+  font-size: 45px;
+  font-family: 'Saol Display';
+  font-weight: normal;
+  color: #101010;
+}
+
+@media (max-width: 899px) {
+
+  .homeTwo_container {
+    width: 100%;
+  }
+
+  .homeTwo_container > h1 {
+    font-size: 30px;
+  }
+
+  .homeTwo_container > p {
+    font-size: 30px;
+  }
+
+  .homeThree_container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .homeThree_container_side {
+    width: 100%;
+  }
+
+  .homeFour_container_inner > p {
+    font-size: 35px;
+  }
+}
