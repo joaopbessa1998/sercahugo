@@ -34,6 +34,7 @@
 
 .homeTwo {
   width: 90%;
+  max-width: 1550px;
   margin: auto;
   margin-bottom: 100px;
 }
