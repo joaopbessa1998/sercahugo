@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/collection": "pages/collection.js",
-  "/": "pages/index.js",
-  "/our-story": "pages/our-story.js"
+  "/our-story": "pages/our-story.js",
+  "/collection": "pages/collection.js"
 }
