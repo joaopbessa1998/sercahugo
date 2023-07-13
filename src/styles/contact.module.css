@@ -1,4 +1,14 @@
 @font-face {
+    font-family: "Saol Display";
+    src: url(/fonts/Saol_Display_Regular.ttf);
+}
+
+@font-face {
+    font-family: "Maison Neue";
+    src: url(/fonts/Maison_Neue_Mono_Regular.ttf);
+}
+
+@font-face {
     font-family: "Poppins";
     src: url(/fonts/Poppins_Light.ttf);
     font-weight: 300;

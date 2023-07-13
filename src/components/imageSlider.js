@@ -56,10 +56,10 @@ export default function ImageSlider() {
                         })
                     }
                 </div>
-                <div className={styles.carousel_buttons}>
+                {/* <div className={styles.carousel_buttons}>
                     <button onClick={prevSlide}>Anterior</button>
                     <button onClick={nextSlide}>Próxima</button>
-                </div>
+                </div> */}
             </div>
         </div>
     )

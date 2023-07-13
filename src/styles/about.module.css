@@ -20,12 +20,39 @@
     font-weight: 400;
 }
 
+.aboutSlider {
+    padding-top: 150px;
+    max-width: 1550px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.aboutSlider_title {
+    margin-bottom: 50px;
+}
+
+.aboutSlider_title h1 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Poppins";
+    color: #101010;
+}
+
+.aboutSlider_title h2 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Saol Display;
+    color: #101010;
+}
+
+
+
 .aboutOne {
     max-width: 1550px;
     margin: auto;
     width: 90%;
-    padding-top: 120px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .aboutOne_container {
@@ -89,8 +116,20 @@
 
 @media (max-width: 749px) {
 
-    .aboutOne {
-        padding-top: 80px;
+    .aboutSlider {
+        margin-bottom: 30px;
+    }
+
+    .aboutSlider_title {
+        margin-bottom: 30px;
+    }
+
+    .aboutSlider_title h1 {
+        font-size: 12px;
+    }
+
+    .aboutSlider_title h2 {
+        font-size: 30px;
     }
 
     .aboutOne_container {

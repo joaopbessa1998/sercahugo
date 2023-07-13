@@ -5,6 +5,15 @@ import styles from "../styles/about.module.css"
 function About() {
     return (
         <div>
+            <div className={styles.aboutSlider}>
+                <div className={styles.aboutSlider_title}>
+                    <h1>SERCA FURNITURE</h1>
+                    <h2>Meet our company</h2>
+                </div>
+                <div className={styles.aboutSlider_carousel}>
+                    <ImageSlider />
+                </div>
+            </div>
             <div className={styles.aboutOne}>
                 <div className={styles.aboutOne_container}>
                     <div className={styles.aboutOne_container_section}>
@@ -49,12 +58,6 @@ function About() {
                         </div>
                         <div className={styles.aboutOne_container_section_side}>
                             <img src="https://images.unsplash.com/photo-1497219055242-93359eeed651?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2049&q=80" alt="Serca Furniture" />
-                        </div>
-                    </div>
-                    <div className={styles.aboutOne_container_carousel}>
-                        <h3>Meet our company</h3>
-                        <div className={styles.aboutOne_container_carousel_inner}>
-                            <ImageSlider />
                         </div>
                     </div>
                 </div>
