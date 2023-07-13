@@ -1,4 +1,5 @@
 import styles from "../styles/collection-inner.module.css"
+import PrevNext from "./prevNext"
 
 
 export default function CollectionInner({ featuredImage, featuredImageAlt, h1, h2, p, image1Url, image1Alt, image2Url, image2Alt, image3Url, image3Alt, image4Url, image4Alt, image5Url, image5Alt, image6Url, image6Alt }) {
@@ -25,6 +26,12 @@ export default function CollectionInner({ featuredImage, featuredImageAlt, h1, h
                     <img src={image5Url} alt={image5Alt} />
                     <img src={image6Url} alt={image6Alt} />
                 </div>
+            </div>
+            <div className={styles.collectionInnerFour}>
+                <PrevNext
+                    navigatePrev=""
+                    navigateNext=""
+                />
             </div>
         </div>
     )

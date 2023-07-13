@@ -1,12 +1,15 @@
 import Link from "next/link"
 import styles from "../styles/navigation.module.css"
 import { useState } from "react"
+import { useRouter } from "next/router";
 
 
 
 export default function Navigation() {
 
     const [navigation, setNavigation] = useState(false);
+
+    const router = useRouter();
 
     return (
         <div className={styles.navigation}>
@@ -26,6 +29,7 @@ export default function Navigation() {
                             <li>
                                 <Link
                                     href="/"
+                                    className={router.pathname == "/" ? styles.active : ''}
                                     onClick={() => setNavigation(!navigation)}
                                     style={{ top: navigation ? '0' : '120px', transitionDelay: navigation ? '0.5s' : '0' }}>
                                     Início
@@ -36,6 +40,7 @@ export default function Navigation() {
                             <li>
                                 <Link
                                     href="/our-story"
+                                    className={router.pathname == "/our-story" ? styles.active : ''}
                                     onClick={() => setNavigation(!navigation)}
                                     style={{ top: navigation ? '0' : '120px', transitionDelay: navigation ? '0.6s' : '0' }}>
                                     Sobre nós
@@ -46,6 +51,7 @@ export default function Navigation() {
                             <li>
                                 <Link
                                     href="/collection"
+                                    className={router.pathname == "/collection" ? styles.active : ''}
                                     onClick={() => setNavigation(!navigation)}
                                     style={{ top: navigation ? '0' : '120px', transitionDelay: navigation ? '0.7s' : '0' }}>
                                     Coleções
@@ -56,6 +62,7 @@ export default function Navigation() {
                             <li>
                                 <Link
                                     href="/contact"
+                                    className={router.pathname == "/contact" ? styles.active : ''}
                                     onClick={() => setNavigation(!navigation)}
                                     style={{ top: navigation ? '0' : '120px', transitionDelay: navigation ? '0.8s' : '0' }}>
                                     Contacto
