@@ -7,7 +7,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Navigation />
-      <AnimatePresence>
+      <AnimatePresence mode='wait'>
         <Component {...pageProps} />
       </AnimatePresence>
       <Footer />
