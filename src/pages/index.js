@@ -2,10 +2,11 @@ import CollectionCard from "@/components/collectionCard"
 import styles from "../styles/home.module.css"
 import Link from "next/link"
 import Intro from "@/components/intro"
+import Transition from "@/transition"
 
 
 
-export default function Home() {
+function Home() {
 
   return (
     <>
@@ -86,3 +87,5 @@ export default function Home() {
 
   )
 }
+
+export default Transition(Home);

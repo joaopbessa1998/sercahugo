@@ -1,8 +1,8 @@
-
+import Transition from "@/transition"
 import ImageSlider from "@/components/imageSlider"
 import styles from "../styles/about.module.css"
 
-export default function About() {
+function About() {
     return (
         <div>
             <div className={styles.aboutOne}>
@@ -62,3 +62,5 @@ export default function About() {
         </div>
     )
 }
+
+export default Transition(About);

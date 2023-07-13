@@ -1,8 +1,9 @@
 import Link from "next/link"
 import styles from "../styles/contact.module.css"
+import Transition from "@/transition"
 
 
-export default function Contact() {
+function Contact() {
     return (
         <div className={styles.contact}>
             <div>
@@ -64,3 +65,5 @@ export default function Contact() {
         </div>
     )
 }
+
+export default Transition(Contact);

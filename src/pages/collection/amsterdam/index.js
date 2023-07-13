@@ -1,8 +1,9 @@
 import CollectionInner from "@/components/collection-inner"
 import styles from "../../../styles/collection-page.module.css"
+import Transition from "@/transition"
 
 
-export default function AmsterdamCollection() {
+function AmsterdamCollection() {
     return (
         <div>
             <div className={styles.collectionPage}>
@@ -31,3 +32,5 @@ export default function AmsterdamCollection() {
         </div>
     )
 }
+
+export default Transition(AmsterdamCollection);

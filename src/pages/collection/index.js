@@ -1,10 +1,11 @@
 import CollectionCard from "@/components/collectionCard"
 import styles from "../../styles/collection.module.css"
 import Intro from "@/components/intro"
+import Transition from "@/transition"
 
 
 
-export default function Collection() {
+function Collection() {
     return (
         <div>
             <div className={styles.collectionThree}>
@@ -74,3 +75,5 @@ export default function Collection() {
         </div>
     )
 }
+
+export default Transition(Collection);
