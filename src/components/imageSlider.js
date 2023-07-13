@@ -37,7 +37,7 @@ export default function ImageSlider() {
     useEffect(() => {
         const slideInterval = setInterval(() => {
             setCurrentIndex(currentIndex => currentIndex < slides.length - 1 ? currentIndex + 1 : 0)
-        }, 6000)
+        }, 2500)
 
         return () => clearInterval(slideInterval)
     }, [])
