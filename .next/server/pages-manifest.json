@@ -4,6 +4,5 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/collection": "pages/collection.js",
-  "/collection/amsterdam": "pages/collection/amsterdam.js",
   "/our-story": "pages/our-story.js"
 }
